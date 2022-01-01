@@ -1,4 +1,12 @@
-let searchHandle = function(icon) {
-    icon.classList.toggle('fa-times');
-    search-bar-Container.classList.toggle('active')
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+
+window.onscroll = () =>{
+    searchBtn.classList.remove('fa-times');
+    searchBar.classList.remove('active');
 }
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
+});

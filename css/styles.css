@@ -1,52 +1,101 @@
-.navbar .navbar-brand{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: #fff;
-    text-transform: uppercase;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-.navbar-brand span{
-    color: orange;
-}
+ :root{
+   --orange:#ffa500;
+ }
+ 
+ *{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   text-transform: capitalize;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+ }
+ 
+ *::selection{
+   background:var(--orange);
+   color:#fff;
+ }
+ 
+ html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-padding-top: 6rem;
+   scroll-behavior: smooth;
+ }
 
-.navbar div .navbar .nav-item .nav-link{
-    font-size: 15px;
-    margin:0 .6rem;
-}
+header .logo{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color:#fff;
+   text-transform: uppercase;
+   padding-left: 15px;
+   margin-right: 20px;
+ }
+ 
+ header .logo span{
+   color:var(--orange);
+ }
+ 
+ header .navbar .nav .navbar-nav .nav-link{
+   color:#eee;
+   font-size: 15px;
+ }
+ 
+ header .navbar .nav .navbar-nav .nav-link:hover{
+   color:var(--orange);
+ }
 
-.navbar div .search-bar-container{
-    position: absolute;
-    top:100%; left: 0; right:0;
-    padding:1.5rem 2rem;
-    background:#333;
-    border-top: .1rem solid rgba(255,255,255,.2);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.navbar div .search-bar-container.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-  
-.navbar div .search-bar-container #search-bar{
-    width:100%;
-    padding: 5px;
-    text-transform: none;
-    color:#333;
-    font-size: 20px;
-    border-radius: .6rem;
-}
-  
-.navbar div .search-bar-container label{
-    color:#fff;
-    cursor: pointer;
-    font-size: 1.5rem;
-    margin: 10px 20px;
-}
-
-.navbar div .search-bar-container label:hover{
-    color:orange;
-} 
-
+ header .icons{
+   margin-top: 5px;
+   margin-left: 52rem;
+ }
+ 
+ header .icons i{
+   font-size: 2.3rem;
+   color:#eee;
+   cursor: pointer;
+   margin-right: 3rem;
+ }
+ 
+ header .icons i:hover{
+   color:var(--orange);
+ }
+ 
+ header .search-bar-container{
+   position: absolute;
+   top:100%; left: 0; right:0;
+   padding:1.5rem 2rem;
+   background:#333;
+   border-top: .1rem solid rgba(255,255,255,.2);
+   display: flex;
+   align-items: center;
+   z-index: 1001;
+   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+ }
+ 
+ header .search-bar-container.active{
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+ }
+ 
+ header .search-bar-container #search-bar{
+   width:100%;
+   padding:1rem;
+   text-transform: none;
+   color:#333;
+   font-size: 1.7rem;
+   border-radius: .5rem;
+ }
+ 
+ header .search-bar-container label{
+   color:#fff;
+   cursor: pointer;
+   font-size: 3rem;
+   margin-left: 1.5rem;
+ }
+ 
+ header .search-bar-container label:hover{
+   color:var(--orange);
+ }

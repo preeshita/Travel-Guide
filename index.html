@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>tour and travel agency</title>
+        <title>Travel Agency</title>
 
         <!--font awesome cdn link-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <!--custom css file link-->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
         <!--bootsttrap link-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -18,27 +18,30 @@
     <body>
 
         <!--header section starts-->
-        <header>
-            <a href="#" class="logo"><span>T</span>ravel</a>
-            <nav class="navbar">
-                <a href="#home">home</a>
-                <a href="#book">book</a>
-                <a href="#packages">packages</a>
-                <a href="#services">services</a>
-                <a href="#review">review</a>
-                <a href="#contact">contact</a>
+        <header>           
+            <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+                <a href="#" class="navbar-brand logo"><span>TRAVEL </span>GUIDE</a>
+                <div class="nav">                   
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#book">Destination</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#packages">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>    
+                    </ul>
 
-            </nav>
-
-            <div class="icons">
-                <i class="fas fa-search" id="search-btn"></i>
-                <i class="fas fa-user" id="login-btn"></i>
-            </div>
-
-            <form action="" class="search-bar-container">
-                <input type="search" id="search-bar" placeholder="search here..">
-                <label for="search-bar" class="fas fa-search"></label>
-            </form>
+                    <ul class="navbar-nav icons">
+                        <i class="fas fa-search" id="search-btn"></i>
+                        <i class="fas fa-user" id="login-btn"></i>
+                    </ul>
+    
+                    <form action="" class="search-bar-container">
+                        <input type="search" id="search-bar" placeholder="search here">
+                        <label for="search-bar" class="fas fa-search"></label>
+                    </form>
+                </div>
+            </div> 
         </header>
         <!--header section ends-->
 
@@ -47,6 +50,6 @@
 
 
         <!--custom js file link-->
-        <script src="js/script.js"></script>
+        <script src="script/script.js"></script>
     </body>
 </html>

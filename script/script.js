@@ -1,5 +1,8 @@
 let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
+let formBtn = document.querySelector('#login-btn');
+let loginForm = document.querySelector('.login-form-container');
+let formClose = document.querySelector('#form-close');
 
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
@@ -11,6 +14,14 @@ searchBtn.addEventListener('click', () =>{
     searchBar.classList.toggle('active');
 });
 
-function videoUrl(link){
-    document.querySelector(".slider").src=link;
-}
+/*function videoUrl(hmm){
+    document.getElementById("slider").src= hmm;
+}*/
+formBtn.addEventListener('click', () =>{
+    loginForm.classList.add('active');
+    
+});
+formClose.addEventListener('click', () =>{
+    loginForm.classList.remove('active');
+    
+});

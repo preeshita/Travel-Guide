@@ -14,13 +14,14 @@ searchBtn.addEventListener('click', () =>{
     searchBar.classList.toggle('active');
 });
 
-/*function videoUrl(hmm){
+function videoUrl(hmm){
     document.getElementById("slider").src= hmm;
-}*/
+}
+
 formBtn.addEventListener('click', () =>{
-    loginForm.classList.add('active');
-    
+    loginForm.classList.add('active');  
 });
+
 formClose.addEventListener('click', () =>{
     loginForm.classList.remove('active');
     

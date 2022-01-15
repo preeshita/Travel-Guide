@@ -10,3 +10,7 @@ searchBtn.addEventListener('click', () =>{
     searchBtn.classList.toggle('fa-times');
     searchBar.classList.toggle('active');
 });
+
+function videoUrl(link){
+    document.querySelector(".slider").src=link;
+}
